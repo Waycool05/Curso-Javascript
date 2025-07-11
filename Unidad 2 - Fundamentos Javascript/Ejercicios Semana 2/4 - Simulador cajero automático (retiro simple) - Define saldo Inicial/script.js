@@ -2,7 +2,7 @@ const saldoInicial = 100000;
 
 let saldoCapital= saldoInicial;
 
-for(;;){
+for(;;){ // ejemplo de un bucle infinito
     let retiroDinero=(prompt(`Ingrese un monto a retirar (su saldo actual es ${saldoCapital}`));
     if (retiroDinero===null) {
         alert(`Operación Cancelada`);
