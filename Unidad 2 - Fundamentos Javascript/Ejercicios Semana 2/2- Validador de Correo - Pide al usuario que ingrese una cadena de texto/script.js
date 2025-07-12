@@ -1,3 +1,18 @@
+// ### **Ejercicio 2: Validador de correo**
+
+// Pide al usuario que ingrese una cadena de texto.
+
+// Verifica si contiene un `'@'` y un `'.'`.
+
+// Muestra si "parece un correo válido" o no.
+
+// (Investigar includes)
+
+
+
+
+
+
 let CorreoElectronico = (prompt("Por favor Ingrese un Correo Electrónico"));
 
 let Arroba = -1;

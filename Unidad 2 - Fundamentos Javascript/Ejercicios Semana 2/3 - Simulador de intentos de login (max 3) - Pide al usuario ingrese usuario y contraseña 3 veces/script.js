@@ -1,3 +1,16 @@
+// ### **Ejercicio 3: Simulación de intentos de login (máximo 3)**
+
+// Permite al usuario intentar ingresar usuario y contraseña hasta 3 veces.
+
+// Si acierta, muestra "Acceso concedido".
+
+// Si falla 3 veces, muestra "Cuenta bloqueada".
+
+
+
+
+
+
 const usuario = "admin";
 const contraseña ="12345";
 

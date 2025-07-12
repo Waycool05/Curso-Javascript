@@ -1,3 +1,17 @@
+// ### **Ejercicio 6: Menú de opciones básico**
+
+// Muestra un menú repetidamente hasta que el usuario elija salir:
+
+// ```jsx
+// 1. Ver saludo
+// 2. Mostrar hora ficticia
+// 3. Salir
+// ```
+
+// Usa un bucle. Las opciones pueden mostrar mensajes simulados como “Hola, usuario” o “La hora es 12:00”.
+
+
+
 let opciones;
 
 while (true) {

@@ -1,3 +1,15 @@
+// ### **Ejercicio 5: Bloqueo por PIN incorrecto**
+
+// Define un PIN correcto (por ejemplo: `4321`).
+
+// Permite al usuario ingresarlo hasta 3 veces.
+
+// - Si lo acierta, muestra "PIN correcto".
+// - Si falla las 3 veces, muestra "Tarjeta bloqueada".
+
+
+
+
 const pinCorrecto = "6749";
 
 for(i=0;i<3;i++) {
