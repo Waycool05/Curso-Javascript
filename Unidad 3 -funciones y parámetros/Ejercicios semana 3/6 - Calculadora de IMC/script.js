@@ -42,3 +42,4 @@ if (altura===null || peso===null){
         calcularIMC()
     }
 }
+
