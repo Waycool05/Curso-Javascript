@@ -5,3 +5,4 @@
 // > 
 // > Función que devuelva los elementos marcados como favoritos.
 // >
+
