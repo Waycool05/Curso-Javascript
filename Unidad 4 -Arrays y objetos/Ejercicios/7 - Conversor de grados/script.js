@@ -18,6 +18,12 @@ function celciusAFahrenheit (celciusArray) {
         
     } return tempFahrenheit;
 }
-const tempFahrenheit= celciusAFahrenheit(tempCelcius);
-alert(`temperaturas en Celcius: ${tempCelcius.join(", ")} ºC.\nTemperaturas en Fahrenheit: ${tempFahrenheit.join(", ")} ºF.\n`);
+let tempFahrenheit= celciusAFahrenheit(tempCelcius);
+
+let mostrar = "Celcius - Fahrenheit\n";
+for (let i=0;i<tempCelcius.length;i++) {
+    mostrar+=`${tempCelcius[i]}ºC - ${tempFahrenheit[i]}ºF\n`;
+}
+
+alert(mostrar);
 
