@@ -45,7 +45,7 @@ function buscarContacto() {
 
     for (let i = 0; i < contactos.length; i++) {
         if (contactos[i].nombre.toLowerCase().includes(ingresoNombre.toLowerCase())) {
-            alert(`📞 Teléfono de ${contactos[i].nombre}: ${contactos[i].telefono} - Correo Electrónico: ${contactos[i].correo}`);
+            alert(`Teléfono de ${contactos[i].nombre}: ${contactos[i].telefono} - Correo Electrónico: ${contactos[i].correo}`);
             encontrado = true;
         }
     }
