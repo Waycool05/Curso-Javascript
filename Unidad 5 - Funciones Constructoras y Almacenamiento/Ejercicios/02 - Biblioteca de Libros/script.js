@@ -3,6 +3,8 @@
 //     - Clase Biblioteca con método buscarPorAutor(autor).
 //     - Guarda la biblioteca en localStorage.
 
+import { quitarAcentos } from "../../../funcionesMasUtilizadas";
+
  // 1. Clase Libro
 class Libro {
     constructor(titulo, autor) {
