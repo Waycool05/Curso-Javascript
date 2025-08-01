@@ -1,4 +1,4 @@
-function promptConCancelacion(mensaje) {
+function cancelInput(mensaje) {
     const respuesta = prompt(mensaje);
     // Si el usuario presiona "Cancelar", prompt devuelve null.
     if (respuesta === null) {
@@ -7,7 +7,7 @@ function promptConCancelacion(mensaje) {
     } 
 }
 
-function quitarAcentos(texto) {
+function removeAccents(texto) {
     // Mapeamos los caracteres acentuados a sus equivalentes sin acento
     return texto
         .replace(/[áÁ]/g, 'a')
@@ -17,7 +17,62 @@ function quitarAcentos(texto) {
         .replace(/[úÚüÜ]/g, 'u');
 }
 
+
+function removeAccentsPro(texto) {
+  return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+// Maneja TODOS los diacríticos (no solo vocales españolas)
+
+function getInput(promptText, esNumero = false) {
+    let entrada;
+    do {
+        entrada = prompt(promptText);
+        if (entrada === null) return null;
+        
+        if (esNumero) {
+            entrada = parseFloat(entrada);
+            if (isNaN(entrada)) {
+                alert("❌ Debe ingresar un número válido.");
+                entrada = null;
+            }
+        }
+    } while (entrada === null);
+    
+    return entrada;
+}
+
+function askContinue() {
+    return confirm("¿Deseas agregar otra persona?");
+}
+
+let input=getInput()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export {
-    promptConCancelacion,
-    quitarAcentos,
+    cancelInput,
+    removeAccents,
+    getInput,
+    askContinue,
+    removeAccentsPro,
 };
