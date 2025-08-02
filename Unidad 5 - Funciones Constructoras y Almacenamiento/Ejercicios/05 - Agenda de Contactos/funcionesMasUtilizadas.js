@@ -25,54 +25,31 @@ function removeAccentsPro(texto) {
 
 function getInput(promptText, esNumero = false) {
     let entrada;
-    do {
-        entrada = prompt(promptText);
+    let reIntento=true;
+
+    while(reIntento) {
+        entrada = (prompt(promptText));
         if (entrada === null) return null;
         
         if (esNumero) {
             entrada = parseFloat(entrada);
             if (isNaN(entrada)) {
                 alert("❌ Debe ingresar un número válido.");
-                entrada = null;
+                continue;
             }
         }
-    } while (entrada === null);
-    
-    return entrada;
+        const confirmacion = confirm(`¿Valor ingresado: "${entrada}"\n ¿Es Correcto?`);
+        if (confirmacion) {
+            return entrada;
+        }else {
+            reIntento=askContinue();
+        }
+    } 
+    return null;
 }
 
 function askContinue() {
-    return confirm("¿Deseas agregar otra persona?");
+    return confirm("¿Quieres Continuar?");
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export {
-    cancelInput,
-    removeAccents,
-    getInput,
-    askContinue,
-    removeAccentsPro,
-};

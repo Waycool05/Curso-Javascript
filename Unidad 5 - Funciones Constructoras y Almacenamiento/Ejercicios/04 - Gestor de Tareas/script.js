@@ -3,3 +3,12 @@
 //     - Clase Tareas con métodos para filtrar las completadas.
 //     - Guarda las tareas en localStorage.
 
+class Tareas{
+    constructor(tarea, estado=false) {
+        this.tarea=tarea;
+        this.estado=estado;
+    }
+}
+
+
+
